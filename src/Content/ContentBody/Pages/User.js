@@ -100,14 +100,9 @@ const PageContent = () => {
   );
 };
 
-const UserForm = ({
-  formData,
-  setFormData,
-  users,
-  setUsers,
-  showForm,
-  setShowForm,
-}) => {
+const UserForm = (props) => {
+  const { formData, setFormData, users, setUsers, showForm, setShowForm } =
+    props;
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
@@ -148,8 +143,6 @@ const UserForm = ({
         setShowForm(true);
       });
   };
-
-  console.log({ users });
 
   return (
     <form hidden={showForm}>
