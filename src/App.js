@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./Asset/vendor/bootstrap/css/bootstrap.css";
+import "./Asset/vendor/font-awesome/css/font-awesome.css";
+import "./Asset/vendor/magnific-popup/magnific-popup.css";
+import "./Asset/vendor/magnific-popup/magnific-popup.css";
+import "./Asset/stylesheets/theme.css";
+import "./Asset/stylesheets/skins/default.css";
+import "./Asset/stylesheets/theme-custom.css";
+import Header from "./Header/Header";
+import InnerWrapper from "./Content/InnerWrapper";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header></Header>
+      <InnerWrapper></InnerWrapper>
+    </>
   );
 }
 
